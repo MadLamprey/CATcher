@@ -74,6 +74,7 @@ const REJECTED_DEFINITION =
 const CANNOT_REPRODUCE_DEFINITION = '<p>You are unable to reproduce the behavior reported in the bug after multiple tries.</p>';
 const ISSUE_UNCLEAR_DEFINITION = '<p>The issue description is not clear.</p>';
 const UNDEFINED_DEFINITION = null;
+const UI_FLAW_DEFINITION = '<p>Some aspect of the Ui or a cosmetic issue that inhibits the user experience.</p>';
 
 export const LABEL_DEFINITIONS = {
   severityVeryLow: VERY_LOW_DEFINITION,
@@ -83,6 +84,7 @@ export const LABEL_DEFINITIONS = {
   typeFunctionalityBug: FUNCTIONALITY_BUG_DEFINITION,
   typeFeatureFlaw: FEATURE_FLAW_DEFINITION,
   typeDocumentationBug: DOCUMENTATION_BUG_DEFINITION,
+  typeUiFlaw: UI_FLAW_DEFINITION,
   responseAccepted: ACCEPTED_DEFINITION,
   responseNotInScope: NOT_IN_SCOPE_DEFINITION,
   responseRejected: REJECTED_DEFINITION,
@@ -101,7 +103,8 @@ const REQUIRED_LABELS = {
   type: {
     DocumentationBug: new Label('type', 'DocumentationBug', COLOR_PURPLE_LIGHT, DOCUMENTATION_BUG_DEFINITION),
     FeatureFlaw: new Label('type', 'FeatureFlaw', COLOR_PURPLE_LIGHT, FEATURE_FLAW_DEFINITION),
-    FunctionalityBug: new Label('type', 'FunctionalityBug', COLOR_PURPLE, FUNCTIONALITY_BUG_DEFINITION)
+    FunctionalityBug: new Label('type', 'FunctionalityBug', COLOR_PURPLE, FUNCTIONALITY_BUG_DEFINITION),
+    UiFlaw: new Label('type', 'UiFlaw', COLOR_BLUE, UI_FLAW_DEFINITION)
   },
   response: {
     Accepted: new Label('response', 'Accepted', COLOR_GREEN, ACCEPTED_DEFINITION),
