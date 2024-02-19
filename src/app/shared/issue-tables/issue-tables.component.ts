@@ -199,4 +199,9 @@ export class IssueTablesComponent implements OnInit, AfterViewInit {
       }
     });
   }
+
+  onPageChange(): boolean {
+    console.log(this.paginator.hasNextPage());
+    return !this.paginator.hasNextPage();
+  }
 }
